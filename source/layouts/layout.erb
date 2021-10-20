@@ -7,7 +7,11 @@
           content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Use the title from a page's frontmatter if it has one -->
     <title><%= current_page.data.title || "Winux-ORG" %></title>
-    <%= stylesheet_link_tag "site" %>
+    <%= stylesheet_link_tag "base" %>
+    <%= stylesheet_link_tag "layout" %>
+    <%= stylesheet_link_tag "screen" %>
+    <%= stylesheet_link_tag "skeleton" %>
+    <%= stylesheet_link_tag "syntax" %>
     <%= javascript_include_tag "site" %>
   </head>
   <body>
