@@ -10,7 +10,7 @@ The Go tools are capable of static and dynamic linking with other libraries, and
 
 Let's create library we will use in external systems. Here is an example. File `example.go`:
 
-{% highlight go %}
+```go
 package main
 
 import "C"
@@ -22,7 +22,7 @@ func SayHello(hello *C.char) {
 }
 
 func main() {}
-{% endhighlight %}
+```
 
 and `Makefile` that will contain build script that you can invoke by `make static` or `make shared`. I am not sure if my solution present shows a good practice. Feel free to send a PR with improvement.
 

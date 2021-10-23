@@ -2,6 +2,9 @@ activate :autoprefixer do |prefix|
   prefix.browsers = "last 2 versions"
 end
 
+# https://github.com/middleman/middleman-syntax
+# activate :syntax, :line_numbers => true
+
 # Per-page layout changes
 page '/CNAME', layout: false
 page '/*.xml', layout: false
