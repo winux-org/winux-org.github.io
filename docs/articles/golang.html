@@ -29,12 +29,12 @@
         <nav>
   <h2 style="font-size: 16px;">Welcome to <a href="/"> Winux</a>!</h2>
   <div id="social">
-    <div>Menu</div>
+    <!--<strong>Issues</strong>
 
-    <div>Coding sessions</div>
-    <ul>
-      <li><a href="/articles/bootloader.html">Bootloader</a></li>
+   <ul>
+      <li><a href="/articles/keyboard-shortcuts.html">Keyboard Shortcuts</a></li>
     </ul>
+    -->
   </div>
 </nav>
       </div>
@@ -45,7 +45,7 @@
 
 <p>Let’s create library we will use in external systems. Here is an example. File <code>example.go</code>:</p>
 
-<p>{% highlight go %}
+<p>```go
 package main</p>
 
 <p>import “C”
@@ -57,7 +57,7 @@ func SayHello(hello *C.char) {
 }</p>
 
 <p>func main() {}
-{% endhighlight %}</p>
+```</p>
 
 <p>and <code>Makefile</code> that will contain build script that you can invoke by <code>make static</code> or <code>make shared</code>. I am not sure if my solution present shows a good practice. Feel free to send a PR with improvement.</p>
 
