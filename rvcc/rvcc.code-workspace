@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"files.associations": {
+			"*.h": "cpp",
+			"*.inc": "c",
+			"type_traits": "c"
+		}
+	}
+}

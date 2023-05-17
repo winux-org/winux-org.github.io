@@ -3,6 +3,11 @@
 .DS_Store
 .sass-cache
 
+.vs/*
+*.o
+*.elf
+*.log
+*.lst
 
 *~
 _*
