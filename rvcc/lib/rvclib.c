@@ -11,14 +11,6 @@
 #define __syscall_brk 214
 #endif
 
-#ifdef __ARM
-#define __syscall_exit 1
-#define __syscall_read 3
-#define __syscall_write 4
-#define __syscall_close 6
-#define __syscall_open 5
-#define __syscall_brk 45
-#endif
 
 typedef int FILE;
 
