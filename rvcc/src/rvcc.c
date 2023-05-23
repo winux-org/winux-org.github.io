@@ -1233,7 +1233,7 @@ void c_generate()
 
 
 /* embedded clib */
-#include "rvclib.inc"
+/* #include "rvclib.inc" */
 
 
 /* rvcc C compiler - source->IL parser */
@@ -3932,14 +3932,15 @@ void r_initialize_backend(backend_def *be)
 
 int main(int argc, char *argv[])
 {
-	int i = 1, clib = 1;
+	int i = 1;/* clib = 1; */
 	char *outfile = NULL, *infile = NULL;
 
 	printf("rvcc C compiler\n");
 
 	while (i < argc) {
 		if (strcmp(argv[i], "-noclib") == 0)
-			clib = 0;
+			/*clib = 0;*/
+			break;
 		else if (strcmp(argv[i], "-o") == 0)
 			if (i < argc + 1) {
 				outfile = argv[i + 1];
@@ -3961,11 +3962,11 @@ int main(int argc, char *argv[])
 	/* initialize globals */
 	g_initialize();
 
-	/* include clib */
-	if (clib) {
-		s_clib();
-	}
-
+	/* include clib 
+	// if (clib) {
+	// 	s_clib();
+	// }
+*/
 	/* load source code */
 	s_load(infile);
 
